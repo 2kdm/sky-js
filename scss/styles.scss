@@ -1,0 +1,87 @@
+@import './general/layout';
+@import './general/common';
+@import './general/variables';
+@import './general/media';
+
+@import './components/button';
+@import './components/game-card';
+
+
+.welcome-section {
+  min-height: 400px;
+  height: 100vh;
+  padding-top: 21.2%;
+
+  background: $section-background url(../assets/welcome-background.jpg) no-repeat center;
+  background-size: cover;
+
+  @include mobile() {
+    background-position: 31% 0;
+  }
+
+  &__content {
+    @include mobile() {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 78px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: $white;
+
+    @include mobile() {
+      text-align: center;
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+
+  &__caption {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 44px;
+    max-width: 481px;
+    color: $white;
+
+    @include mobile() {
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+      width: 343px;
+      margin: 0 auto 32px auto;
+    }
+  }
+}
+
+.games-section {
+  padding: 128px 0;
+  min-height: 556px;
+  background-color: $section-background;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+.game-card {
+  &-1 {
+    background-image: url(../assets/game-card-1.jpg);
+  }
+
+  &-2 {
+    background-image: url(../assets/game-card-2.jpg);
+  }
+
+  &-3 {
+    background-image: url(../assets/game-card-3.jpg);
+  }
+}
