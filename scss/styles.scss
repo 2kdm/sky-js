@@ -8,8 +8,7 @@
 
 
 .welcome-section {
-  min-height: 400px;
-  height: 100vh;
+  height: 1024px;
   padding-top: 21.2%;
 
   background: $section-background url(../assets/welcome-background.jpg) no-repeat center;
@@ -17,6 +16,11 @@
 
   @include mobile() {
     background-position: 31% 0;
+    height: 735px;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__content {
