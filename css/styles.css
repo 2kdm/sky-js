@@ -175,3 +175,101 @@ a {
 .game-card-3 {
   background-image: url(../assets/game-card-3.jpg);
 }
+
+.game-section {
+  background-color: #000915;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .game-section {
+    height: 654px;
+  }
+}
+.game-section .game-section__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .game-section .game-section__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+.game-section .game-section__left {
+  max-width: 584px;
+}
+@media screen and (max-width: 767px) {
+  .game-section .game-section__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 64px;
+  }
+}
+.game-section .game-section__right {
+  height: 333px;
+  width: 485px;
+}
+@media screen and (max-width: 767px) {
+  .game-section .game-section__right {
+    width: 100%;
+    height: 236px;
+  }
+}
+
+.game-title {
+  color: #FFFFFF;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 767px) {
+  .game-title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+.game-caption {
+  color: #FFFFFF;
+  font-family: "Montserrat", serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 767px) {
+  .game-caption {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
