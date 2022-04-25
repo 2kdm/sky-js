@@ -4,14 +4,15 @@
     Затем запишите в нее значение 20, выведите его на экран.
  */
 
-let a = 10;
+{
+    let a = 10;
 
-alert(a);
+    alert(a);
 
-a = 20;
+    a = 20;
 
-alert(a);
-
+    alert(a);
+}
 
 
 /*  2
@@ -56,19 +57,17 @@ alert(q / w);
     Результатом работы программы должно быть сложение двух этих значений.
 
     *Не забудьте про использование преобразования типов
-
-    ---------
-    Заменил 'a' на 'a5' и 'b' на 'b5', чтобы получить уникальные имена переменных.
 */
 
-let a5 = prompt('Enter any data') || '';
-let b5 = prompt('Enter any data') || '';
+{
+    let a = prompt('Enter any data') || '';
+    let b = prompt('Enter any data') || '';
 
-a5 = isNaN(Number(a5)) ? a5 : Number(a5);
-b5 = isNaN(Number(b5)) ? b5 : Number(b5);
+    a = isNaN(Number(a)) ? a : Number(a);
+    b = isNaN(Number(b)) ? b : Number(b);
 
-alert(a5 + b5);
-
+    alert(a + b);
+}
 
 
 
@@ -85,16 +84,14 @@ alert(result);
 /*  7
     Даны переменные: a = 9 и b = 2.
     Найдите остаток от деления a на b, и выведите результат на экран с помощью метода alert().
-
-    -------
-    Заменил 'a' на 'a7' и 'b' на 'b7', чтобы получить уникальные имена переменных.
 */
 
-const a7 = 9;
-const b7 = 2;
+{
+    const a = 9;
+    const b = 2;
 
-alert(a7 % b7);
-
+    alert(a % b);
+}
 
 
 
@@ -104,16 +101,14 @@ alert(a7 % b7);
     let a = '2';
     let b = '3';
     alert(a + b);
-
-    -------
-    Заменил 'a' на 'a8' и 'b' на 'b8', чтобы получить уникальные имена переменных.
 */
 
-let a8 = '2';
-let b8 = '3';
+{
+    const a = '2';
+    const b = '3';
 
-alert(+a8 + +b8);
-
+    alert(Number(a) + Number(b));
+}
 
 
 
@@ -122,11 +117,12 @@ alert(+a8 + +b8);
     сложите значения этих переменных как строки и выведите результат на экран с помощью метода alert().
 */
 
-const a9 = 1;
-const b9 = 2;
+{
+    const a = 1;
+    const b = 2;
 
-alert(a9.toString() + b9.toString());
-
+    alert(a.toString() + b.toString());
+}
 
 
 
@@ -136,11 +132,12 @@ alert(a9.toString() + b9.toString());
     Ответ должен быть в таком формате: 11px.
 */
 
-const a10 = '5';
-const b10 = '6';
+{
+    const a = '5';
+    const b = '6';
 
-alert(`${+a10 + +b10}px`);
-
+    alert(`${Number(a) + Number(b)}px`);
+}
 
 
 
@@ -178,8 +175,8 @@ num += 5;
 num -= 3;
 num *= 7;
 num /= 3;
-num += 1;
-num -= 1;
+num ++;
+num --;
 alert(num);
 
 /*  13
